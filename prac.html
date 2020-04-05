@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Tut</title>
+</head>
+<body>
+    <style>
+        #display{
+            margin: 5px;
+            width: 250px;
+            height: 250px;
+            border: 1px solid #727272;
+            background-color: lightgray;
+            color: brown;
+        }
+
+    </style>
+    <input id="textbox" type="text">
+    <button id="submit">Submit</button>
+    <div id="display"></div>
+
+
+
+    <!-- <button id="special" class="bold small">Button1</button>
+    <button class="bold small">Button2</button>
+    <button class="small">Button3</button>
+    <button>Button4</button>
+    <button>Button5</button>
+    <button>Button6</button> -->
+
+
+    <script src="js/jquery-3.4.1.js"></script>
+        <!-- <script>
+            $(function () {
+                //$("#special").hide();
+                //$("#special").css("font-size","300px");
+                //$("#special").css("background-color","lightblue");
+                $("#special").click(function () {
+                    //alert("abhishek");
+                    //console.log("abhishek");
+                    $("button:not(#special)").hide();
+                    $(this).css("font-size","16px");
+                    $(this).css("color","brown");
+                    $(this).css("border", "2px solid green");
+
+                });
+            });
+        </script> -->
+        <script>
+            $(function(){
+                $("#submit").click(function(){
+                    var txt=$("#textbox").val();
+                    $("#display").html(txt).css("font-size","16px");
+                    $("#textbox").val();
+                });
+            });
+        </script>
+</body>
+</html>

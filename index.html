@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Tutorials</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        #display{
+            width: 250px;
+            height: 250px;
+            border: 1px dashed grey;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!--how to work Jquery-->
+   <!--<script type="text/javascript">
+        $(function(){
+            //$("#special").hide();
+            $("#special").css("font-size" ,"30px");
+            $("#special").css("background-color","yellow");
+            $("#special").click(function() {
+               
+                $("button:not(#special)").hide();
+                $(this).css("font-size","12px");
+                $(this).css("color","black");
+
+            });
+        });    
+    </script>--> 
+    <!--<style type="text/css">
+        .big{
+            font-size:20px;
+        }
+        .small{
+            font-size: 8px;
+        }
+        #green{
+            color: green;
+        }
+    
+    </style>-->
+    <!--<button id="special" class="bold small">Button1</button>
+    <button class="bold small">Button2</button>
+    <button class="bold">Button3</button>
+
+    <button>Button4</button>
+    <button>Button5</button>
+    <button>Button6</button>-->
+
+    <!--jquery selector hide the element-->
+    <!--  <script type="text/javascript">
+        $(".big").hide();
+
+    </script>
+    -->
+    <!--<script type="text/javascript">
+        $("#special").hide();
+        //jQuery("#special").hide();
+    </script>
+-->
+<script type="text/javascript">
+    $(function(){
+        //document has been loaded
+    $("#submit").click(function(){
+        var txt=$("#textbox").val();
+
+        $("#display").html(txt);
+
+        $("#textbox").val("");
+    });
+
+    });
+</script>
+
+
+<input id="textbox"type="text">
+<button id="submit">Submit</button>
+<div id="display"></div>
+
+</body>
+</html>
